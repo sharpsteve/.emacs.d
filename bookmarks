@@ -2,7 +2,22 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("autocorrect.ahk"
+(("elpa"
+ (filename . "~/.emacs.d/elpa/")
+ (front-context-string . "archives\n  drwxr")
+ (rear-context-string . "  0 12-14 13:53 ")
+ (position . 266))
+("emacs26"
+ (filename . "c:/emacs26/")
+ (front-context-string . "bin\n  drwxrwxrwx")
+ (rear-context-string . "304 2018-05-30  ")
+ (position . 274))
+("magnars"
+ (filename . "~/.emacs.d.old-magnars/")
+ (front-context-string . "auto-save-list\n ")
+ (rear-context-string . "096 12-14 09:32 ")
+ (position . 274))
+("autocorrect.ahk"
  (filename . "c:/Users/sharps/OneDrive - Michigan State University/ahk/autocorrect.ahk")
  (front-context-string . ";---------------")
  (rear-context-string)
@@ -43,10 +58,10 @@
  (rear-context-string . "683 12-12 09:37 ")
  (position . 270))
 ("site-lisp"
- (filename . "~/.emacs.d/site-lisp/")
- (front-context-string . "..\n  drwxrwxrwx ")
- (rear-context-string . "096 12-12 09:47 ")
- (position . 160))
+ (filename . "c:/emacs26/share/emacs/26.1/site-lisp/")
+ (front-context-string)
+ (rear-context-string . "106 2018-05-30  ")
+ (position . 251))
 (".emacs.d"
  (filename . "~/.emacs.d/")
  (front-context-string . "site-lisp\n  drwx")
