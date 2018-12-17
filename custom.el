@@ -9,7 +9,7 @@
  '(ido-use-filename-at-point nil)
  '(package-selected-packages
    (quote
-    (ahk-mode projectile perspective ido-completing-read+ clojure-mode f flx flycheck ansible systemd diff-hl less-css-mode typescript-mode cider yasnippet whitespace-cleanup-mode wgrep visual-regexp string-edit spinner smartparens simple-httpd restclient request queue prodigy paredit nodejs-repl move-text markdown-mode magit lorem-ipsum js2-mode inflections ido-vertical-mode ido-at-point hydra htmlize highlight-escape-sequences guide-key groovy-mode gist flycheck-pos-tip flx-ido fill-column-indicator exec-path-from-shell elm-mode elisp-slime-nav edn dockerfile-mode dired-details css-eldoc company clojure-mode-extra-font-locking beginend)))
+    (zenburn-theme ahk-mode projectile perspective ido-completing-read+ clojure-mode f flx flycheck ansible systemd diff-hl less-css-mode typescript-mode cider yasnippet whitespace-cleanup-mode wgrep visual-regexp string-edit spinner smartparens simple-httpd restclient request queue prodigy paredit nodejs-repl move-text markdown-mode magit lorem-ipsum js2-mode inflections ido-vertical-mode ido-at-point hydra htmlize highlight-escape-sequences guide-key groovy-mode gist flycheck-pos-tip flx-ido fill-column-indicator exec-path-from-shell elm-mode elisp-slime-nav edn dockerfile-mode dired-details css-eldoc company clojure-mode-extra-font-locking beginend)))
  '(safe-local-variable-values
    (quote
     ((eval font-lock-add-keywords nil
@@ -45,6 +45,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Consolas" :foundry "outline" :slant normal :weight normal :height 109 :width normal))))
+ '(default ((t (:family "Hack" :foundry "outline" :slant normal :weight normal :height 103 :width normal))))
  '(js2-error-face ((t nil)) t)
  '(js2-warning-face ((t nil)) t))

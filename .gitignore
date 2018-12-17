@@ -7,5 +7,10 @@
 # Backup files
 *~
 
+# Don't save elpa
+/elpa/*
+
 # Undo-tree save-files
 *.~undo-tree
+*.el#
+
