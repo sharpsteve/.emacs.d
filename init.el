@@ -78,6 +78,13 @@
   (when (file-regular-p file)
     (load file)))
 
+;; Smartparens
+(require 'smartparens-config)
+(smartparens-global-mode 1)
+
+;; For easier window navigation
+(require 'windmove)
+
 ;; Setup key bindings
 (require 'key-bindings)
 

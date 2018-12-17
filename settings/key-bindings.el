@@ -4,10 +4,13 @@
 (global-set-key (kbd "C-x C-c") 'delete-frame)
 
 ;; Move windows, even in org-mode
+;; Window switching
+(windmove-default-keybindings) ;; Shift+direction
+(global-set-key (kbd "C-x -") 'toggle-window-split)
+(global-set-key (kbd "C-x C--") 'rotate-windows)
 (global-set-key (kbd "<s-right>") 'windmove-right)
 (global-set-key (kbd "<s-left>") 'windmove-left)
 (global-set-key (kbd "<s-up>") 'windmove-up)
-(global-set-key (kbd "<s-down>") 'windmove-down)
 
 ;; Copy file path to kill ring
 (global-set-key (kbd "C-x M-w") 'copy-current-file-path)
@@ -23,13 +26,13 @@
 (global-set-key (kbd "M-<left>") 'smart-backward)
 (global-set-key (kbd "M-<right>") 'smart-forward)
 
-;; Like isearch, but adds region (if any) to history and deactivates mark
-(global-set-key (kbd "C-s") 'isearch-forward-use-region)
-(global-set-key (kbd "C-r") 'isearch-backward-use-region)
+;; ;; Like isearch, but adds region (if any) to history and deactivates mark
+;; (global-set-key (kbd "C-s") 'isearch-forward-use-region)
+;; (global-set-key (kbd "C-r") 'isearch-backward-use-region)
 
-;; Like isearch-*-use-region, but doesn't mess with the active region
-(global-set-key (kbd "C-S-s") 'isearch-forward)
-(global-set-key (kbd "C-S-r") 'isearch-backward)
+;; ;; Like isearch-*-use-region, but doesn't mess with the active region
+;; (global-set-key (kbd "C-S-s") 'isearch-forward)
+;; (global-set-key (kbd "C-S-r") 'isearch-backward)
 
 ;; Yank selection in isearch
 (define-key isearch-mode-map (kbd "C-o") 'isearch-yank-selection)
