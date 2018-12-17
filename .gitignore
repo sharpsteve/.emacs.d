@@ -14,8 +14,8 @@
 *.~undo-tree
 *.el#
 
-/server/*
-ido.last
 bookmarks
 /var/*
-
+/server/*
+server/server
+ido.last
