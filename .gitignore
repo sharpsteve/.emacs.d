@@ -1,5 +1,7 @@
 auto-save-list
 backups
+ido.last
+bookmarks
 *~
 .places
 session.*
@@ -20,6 +22,4 @@ site-lisp/adventur-mode
 /ido.last
 /recentf
 /projectile-bookmarks.eld
-server/server
-ido.last
-bookmarks
+/server/server
