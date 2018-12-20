@@ -1,21 +1,25 @@
-# Compiled
-*.elc
-
-# Packaging
-.cask
-
-# Backup files
+auto-save-list
+backups
 *~
-
-# Don't save elpa
-/elpa/*
-
-# Undo-tree save-files
-*.~undo-tree
-*.el#
-
-bookmarks
-/var/*
-/server/*
+.places
+session.*
+tramp
+elpa
+swank
+emms
+site-lisp/adventur-mode
+*.elc
+.DS_Store
+.yas-compiled-snippets.el
+.cask
+/url/
+/var/
+/.sx/
+/ensime/
+/history
+/ido.last
+/recentf
+/projectile-bookmarks.eld
 server/server
 ido.last
+bookmarks

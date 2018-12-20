@@ -47,10 +47,10 @@
 (defun init--install-packages ()
   (packages-install
    '(
+     exec-path-from-shell
      gist
      markdown-mode
      move-text
-     org
      smartparens
      yasnippet
      )))
@@ -61,12 +61,17 @@
    (package-refresh-contents)
    (init--install-packages)))
 
+;; Setup environment variables from the user's shell.
+(when is-mac
+  (require-package 'exec-path-from-shell)
+qq
+  (exec-path-from-shell-initialize))
 ;; Font lock dash.el
 (eval-after-load "dash" '(dash-enable-font-lock))
 
 ;; Fill column indicator
-;; (require 'fill-colqumn-indicator)
-;; (setq fci-rule-color "#111122")
+(require 'fill-colqumn-indicator)
+(setq fci-rule-color "#111122")
 
 ;; Browse kill ring
 (require 'browse-kill-ring)
@@ -78,18 +83,8 @@
   (when (file-regular-p file)
     (load file)))
 
-;; Smartparens
-(require 'smartparens-config)
-(smartparens-global-mode 1)
-
-;; For easier window navigation
-(require 'windmove)
-
 ;; Setup key bindings
 (require 'key-bindings)
-
-;; Setup theme
-(require 'setup-theme)
 
 ;; Emacs server
 (require 'server)
@@ -103,8 +98,3 @@
 ;; Conclude init by setting up specifics for the current user
 (when (file-exists-p user-settings-dir)
   (mapc 'load (directory-files user-settings-dir nil "^[^#].*el$")))
-
-;; HL7 Mode
-(require 'eldoc)
-(autoload 'hl7-mode "~/.emacs.d/site-lisp/hl7-mode.el" "Major mode for editing HL7v2 messages." t nil)
-(push '("^MSH|\\^~\\\\\\&" . hl7-mode) magic-mode-alist)
